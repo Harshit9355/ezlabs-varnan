@@ -1,6 +1,9 @@
 {
-  "buildCommand": "npm install && npx vite build",
+  "buildCommand": "npx vite build --debug",
+  "installCommand": "npm ci || npm install",
   "outputDirectory": "dist",
   "framework": "vite",
-  "installCommand": "npm install"
+  "env": {
+    "NPM_CONFIG_PRODUCTION": "false"
+  }
 }
